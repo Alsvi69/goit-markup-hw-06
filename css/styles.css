@@ -79,8 +79,8 @@ img {
   max-width: 428 px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
   /* max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px; */
@@ -110,7 +110,12 @@ img {
   align-items: center;
 }
 
-/*Header style*/
+/**
+  |============================
+  | Header style
+  |============================
+*/
+
 .header-section {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -196,9 +201,14 @@ img {
   color: var(--dark-blue-color);
 }
 
-/*Main style*/
+/**
+  |============================
+  | Main style
+  |============================
+*/
 
 /*Hero*/
+
 .hero-section {
   background-color: var(--title-color);
   padding: 188px 0;
@@ -243,7 +253,9 @@ img {
 .hero-button:focus {
   background-color: var(--dark-blue-color);
 }
+
 /*Features*/
+
 .features-section {
   padding: 120px 0;
 }
@@ -284,6 +296,7 @@ img {
   color: var(--paragraph-color);
 }
 /*Products*/
+
 .products-section {
   padding-bottom: 120px;
 }
@@ -308,6 +321,7 @@ img {
 .products-item {
 }
 /*Team*/
+
 .team-section {
   background-color: var(--logo-footer-color);
   padding: 120px 0;
@@ -380,6 +394,7 @@ img {
 }
 
 /* Customers-section */
+
 .customers-section {
   background-color: var(--background-color-white);
   padding: 120px 0 120px 0;
@@ -430,9 +445,14 @@ img {
   color: var(--dark-blue-color);
 }
 
-/*Portfolio page*/
+/**
+  |============================
+  | Portfolio page style
+  |============================
+*/
 
 /*Main*/
+
 .portfolio-section {
   padding-top: 96px;
   padding-bottom: 120px;
@@ -528,6 +548,7 @@ img {
 }
 
 /* Overlay description */
+
 .overlay {
   position: absolute;
   top: 0;
@@ -559,7 +580,12 @@ img {
   transform: translateY(0);
 }
 
-/*Footer*/
+/**
+  |============================
+  | Footer
+  |============================
+*/
+
 .page-footer {
   background-color: var(--title-color);
   padding: 100px 0;
@@ -692,6 +718,7 @@ img {
 }
 
 /* Modal window */
+
 .backdrop {
   position: fixed;
   top: 0;
