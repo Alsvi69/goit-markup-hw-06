@@ -87,6 +87,23 @@ img {
   outline: 2px solid red;
   outline-offset: -2px;
 }
+/* Tablet screen */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/* Desctop screen */
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 .container-header {
   display: flex;
   justify-content: space-between;
