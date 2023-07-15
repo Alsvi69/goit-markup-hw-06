@@ -72,6 +72,15 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* Base styles */
+.section {
+  padding: 96px 0;
+}
+@media only screen and (min-width: 1158px) {
+  .section {
+    padding: 120px 0;
+  }
+}
 
 /* Base styles for small device */
 .container {
@@ -101,11 +110,19 @@ img {
     /* padding-left: 15px;
     padding-right: 15px; */
   }
+  .customers-container {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
 }
 /* Desctop screen */
 @media only screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+  }
+  .customers-container {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -329,7 +346,6 @@ img {
 
 .team-section {
   background-color: var(--logo-footer-color);
-  padding: 120px 0;
 }
 .team-list {
   display: flex;
@@ -340,7 +356,7 @@ img {
 }
 @media only screen and (min-width: 768px) {
   .team-list {
-    gap: 24px 64px;
+    gap: 64px 24px;
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -415,12 +431,27 @@ img {
 
 .customers-section {
   background-color: var(--background-color-white);
-  padding: 120px 0 120px 0;
+  /* padding: 120px 0 120px 0; */
 }
+/* Small */
 .customers-list {
   display: flex;
-  justify-content: space-between;
-  gap: 24px;
+  gap: 72px 16px;
+  flex-wrap: wrap;
+}
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .customers-list {
+    gap: 72px 24px;
+    justify-content: space-between;
+  }
+}
+/* Desctop */
+@media only screen and (min-width: 1158px) {
+  .customers-list {
+    justify-content: space-between;
+    gap: 24px;
+  }
 }
 .customers-title {
   font-size: 36px;
@@ -435,9 +466,22 @@ img {
 }
 .customers-thumb {
 }
+/* Small */
 .customers-item {
-  width: calc((100% - 120px) / 6);
+  width: calc((100% - 16px) / 2);
   height: 88px;
+}
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .customers-item {
+    width: calc((100% - 48px) / 3);
+  }
+}
+/* Desctop */
+@media only screen and (min-width: 1158px) {
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+  }
 }
 .customers-item-link {
   display: flex;
