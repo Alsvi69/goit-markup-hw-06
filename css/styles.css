@@ -279,44 +279,127 @@ img {
 /*Features*/
 
 .features-section {
-  padding: 120px 0;
+  /* padding: 120px 0; */
 }
 
+/* Small */
 .features-list {
   display: flex;
   justify-content: space-between;
-  gap: 24px;
+  gap: 72px;
+  flex-direction: column;
 }
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .features-list {
+    /* display: flex; */
+    gap: 72px 24px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+/* Desctop */
+@media only screen and (min-width: 1158px) {
+  .features-list {
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+/* Small */
 .features-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  /* flex-basis: calc((100% - 3 * 24px) / 1); */
 }
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .features-item {
+    flex-basis: calc((100% - 4 * 24px) / 2);
+  }
+}
+/* Desctop */
+@media only screen and (min-width: 1158px) {
+  .features-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+}
+
 .features-icon {
   width: 64px;
   height: 64px;
 }
+/* Small */
 .features-icon-thumb {
-  height: 112px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 8px;
-  border-radius: 4px;
-  background-color: var(--cloud);
+  display: none;
 }
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .features-icon-thumb {
+    /* display: none; */
+  }
+}
+/* Desctop */
+@media only screen and (min-width: 1158px) {
+  .features-icon-thumb {
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background-color: var(--cloud);
+  }
+}
+
+/* Small */
 .features-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.72px;
   color: var(--title-color);
+  text-align: center;
   margin-bottom: 8px;
 }
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .features-title {
+    text-align: left;
+  }
+}
+/* Desctop */
+@media only screen and (min-width: 1158px) {
+  .features-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+}
+/* Small */
 .feature-text {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.32px;
   color: var(--paragraph-color);
 }
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .feature-text {
+  }
+}
+
+/* Desctop */
+@media only screen and (min-width: 1158px) {
+  .feature-text {
+    font-weight: 400;
+  }
+}
+
 /*Products*/
 
 .products-section {
