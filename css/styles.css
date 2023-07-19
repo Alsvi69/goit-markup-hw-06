@@ -475,8 +475,16 @@ img {
 
 /*Products*/
 
+/* Small, Tablet */
 .products-section {
-  padding-bottom: 120px;
+  display: none;
+}
+/* Desctop */
+@media only screen and (min-width: 1158px) {
+  .products-section {
+    display: block;
+    padding-bottom: 120px;
+  }
 }
 .products .list {
   background-color: var(--background-color-white);
