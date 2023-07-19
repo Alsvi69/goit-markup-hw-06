@@ -143,7 +143,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 0 22px 0;
+  padding: 24px 15px 22px 15px;
 }
 /* Tablet */
 @media screen and (min-width: 768px) {
@@ -683,12 +683,31 @@ img {
   padding-top: 96px;
   padding-bottom: 120px;
 }
+/* Small */
 .button-pf-list {
   display: flex;
+  gap: 16px 24px;
+  justify-content: flex-start;
+  margin-bottom: 72px;
+  flex-wrap: wrap;
+  /* display: flex;
   gap: 24px;
   justify-content: center;
-  margin-bottom: 72px;
+  margin-bottom: 72px; */
 }
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .button-pf-list {
+  }
+}
+
+/* Desctop */
+@media only screen and (min-width: 1158px) {
+  .button-pf-list {
+  }
+}
+
 .btn-pf {
   font-weight: 500;
   font-size: 16px;
@@ -713,16 +732,49 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+/* Small */
 .portfolio-list {
-  --items: 3;
+  --items: 1;
   --indent-vertical: 24px;
   --indent-horizontal: 48px;
 }
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .portfolio-list {
+    --items: 2;
+  }
+}
+
+/* Desctop */
+@media only screen and (min-width: 1158px) {
+  .portfolio-list {
+    --items: 3;
+  }
+}
+
+/* Small */
 .portfolio-flex-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  /* display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  gap: 24px;
+  gap: 24px; */
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .portfolio-flex-container {
+  }
+}
+
+/* Desctop */
+@media only screen and (min-width: 1158px) {
+  .portfolio-flex-container {
+  }
 }
 .card-set {
   row-gap: var(--indent-horizontal);
@@ -771,6 +823,28 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--paragraph-color);
+}
+
+/* Small */
+.portfolio-image {
+  width: 396px;
+  height: 280px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .portfolio-image {
+    width: 356px;
+    height: 300px;
+  }
+}
+
+/* Desctop */
+@media only screen and (min-width: 1158px) {
+  .portfolio-image {
+    width: 360px;
+    height: 300px;
+  }
 }
 
 /* Overlay description */
