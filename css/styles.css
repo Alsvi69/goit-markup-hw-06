@@ -59,6 +59,11 @@ img {
 .list {
   list-style: none;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .visually-hidden {
   position: absolute;
@@ -315,18 +320,36 @@ img {
   background-size: cover;
   max-width: 1440px;
 }
+.container-hero {
+}
+
+/* Small */
 .hero-title {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--background-color-white);
-}
-.hero-title-one {
   margin: 0 auto 48px auto;
-  max-width: 496px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.72px;
+  color: var(--background-color-white);
+  max-width: 320px;
 }
+
+/* Tab */
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 56px;
+    letter-spacing: 0.02em;
+    line-height: 1.07;
+    max-width: 496px;
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 1158px) {
+  .hero-title {
+  }
+}
+
 .hero-button {
   font-weight: 500;
   font-size: 16px;
@@ -1493,7 +1516,7 @@ img {
 .mobil-social-icon-list {
   display: inline-flex;
   flex-wrap: wrap;
-  gap: 10px 56px;
+  gap: 0 56px;
   margin-top: 48px;
 }
 .mob-item {
