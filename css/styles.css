@@ -332,7 +332,7 @@ img {
   max-width: 1440px;
   margin: 0 auto;
   background-color: var(--title-color);
-  padding: 188px 0;
+  padding: 112px 0;
   background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
     url(../images/hero/hero-img_mob@1x.jpg);
   background-repeat: no-repeat;
@@ -383,6 +383,14 @@ img {
     }
   }
 }
+
+/* Desktop */
+@media only screen and (min-width: 1158px) {
+  .hero-section {
+    padding: 188px 0;
+  }
+}
+
 /* Small */
 .hero-title {
   margin: 0 auto 48px auto;
